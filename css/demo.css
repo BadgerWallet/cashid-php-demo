@@ -1,0 +1,106 @@
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: #f7f7f7;
+}
+
+body > section {
+  display: block;
+  width: 60rem;
+  margin: auto;
+  padding: 3rem;
+  background-color: #efefef;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 0.25rem rgba(0, 0, 0, 0.31),
+    0rem 0.25rem 0.1rem rgba(0, 0, 0, 0.21);
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+section > header {
+  margin: auto;
+  font-size: xx-large;
+}
+
+section > small {
+  display: inline-block;
+  font-size: large;
+}
+
+ul.examples {
+  padding: 0;
+  margin: 0;
+}
+
+li.example {
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0rem 0rem 0.25rem rgba(0, 0, 0, 0.31),
+    inset 0rem 0.25rem 0.1rem rgba(0, 0, 0, 0.13);
+}
+
+div.requestDescription {
+  width: 100%;
+  height: auto;
+  padding: 1rem 2rem;
+  background-color: #f59332;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+div.requestDescription small {
+  width: 29rem;
+}
+
+ul.requestParts {
+  display: flex;
+  flex-flow: column;
+  padding: 1rem 2rem;
+  padding-bottom: 0;
+  height: 100%;
+}
+
+ul.requestParts li {
+  display: inline-block;
+  flex-basis: 1;
+  width: 100%;
+  height: 100%;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.21);
+}
+
+ul.requestParts li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+ul.requestParts li.requestView {
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+ul.requestParts .requestQR {
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+ul.requestParts pre {
+  display: block;
+  width: calc(100% - 1rem);
+  overflow: auto;
+  height: auto;
+  margin-top: 1rem;
+}
